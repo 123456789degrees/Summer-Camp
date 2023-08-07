@@ -3,22 +3,23 @@ from tkinter import messagebox, simpledialog, Tk
 # Create an if-main code block, *hint, type main then ctrl+space to auto-complete
 if __name__ == '__main__':
     # Make a new window variable, window = Tk()
-
+    window = Tk()
     # Hide the window using the window's .withdraw() method
-
+    window.withdraw()
     # Put this sentence in a pop-up message box:
     # "If you find yourself having to cross a piranha-infested river, here's how to do it..."
-
+    messagebox.showinfo(title="Mad Libs", message="If you find yourself having to cross a piranha-infested river, here's how to do it...")
     # Get the player to enter an adjective
-
+    adjective = simpledialog.askstring(title='Adjective', prompt="Enter an adjective now or else!!!")
     # Get the player to enter a type of liquid
-
+    liquid = simpledialog.askstring(title='Liquid', prompt="Enter a type of liquid now or else!!!")
     # Get the player to enter a body part
-
+    body = simpledialog.askstring(title='Body Part', prompt="Enter a body part now or else!!!")
     # Get the player to enter a verb
-
+    verb = simpledialog.askstring(title='Verb', prompt="Enter a verb now or else!!!")
     # Get the player to enter a place
-
+    place = simpledialog.askstring(title='Place', prompt="Enter a place now or else!!!")
+    messagebox.showinfo(title="Mad Libs", message="Piranhas are more " + adjective + " during the day, so cross the river at night. Piranhas are attracted to fresh " + liquid + " and will most likely take a bite out of your " + body + " if you " + verb + ". Whatever you do, if you have an open wound, try to find another way to get back to the " + place + ". Good luck!")
     # The story below has has been written as a group of Strings joined
     # together by + signs. The story contains place holders, indicated
     # by [** **] which you need to replace with the values entered by the

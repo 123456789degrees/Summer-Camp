@@ -21,49 +21,55 @@ if __name__ == '__main__':
     flameSize = 130         # the length of the flaming arms
     
     # Make a new turtle
-    
+    hmmm = turtle.Turtle()
+    hmmm.shape('turtle')
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    hmmm.width(2)
     # Set the turtle width to 2
-    
+    hmmm.speed(0)
     # Set the turtle speed to 0 (fastest)
-    
+    for i in range (25):
+        hmmm.fillcolor('orange')
+
     # Use a for loop to repeat all of the code below ONE time (we will change
     # this later)
-        
+        hmmm.begin_fill()
         # Set the turtle .fillcolor() to orange
         
         # Call the turtle .begin_fill() function
         
         # TURN RIGHT     Turn the turtle 1/8 of a circle (hint: 360 degrees
         #                will turn a full circle)
-        
+        hmmm.right(360/8)
         # DRAW           Move the turtle 64 pixels
-        
+        hmmm.forward(64)
         # TURN LEFT      Turn the turtle 40 degrees to the LEFT. (Negative
         #                numbers will turn the turtle counter-clockwise.)
-        
+        hmmm.left(40)
+
         # DRAW FLAME     Move the turtle the distance in the variable flameSize
         
         #                Turn the turtle to the right 170 degrees
          
         #                Move the turtle the distance in the variable flameSize (again)
-         
+        hmmm.forward(flameSize)
+        hmmm.right(170)
+        hmmm.forward(flameSize)
         #  TURN RIGHT    Turn the turtle 62 degrees to the right
-        
+        hmmm.right(62)
         #  DRAW          Move the turtle the distance in the variable baseSize
-        
+        hmmm.forward(baseSize)
         # Call the turtle .end_fill() method
-        
+        hmmm.end_fill()
     # Hide your turtle so you can see the pattern.
-        
+    hmmm.hideturtle()
     # TEST   Run the program. Check that your shape is the same as the first
     #        picture in the recipe. This is one arm of the ninja star.
 
     # COLOR  Change the turtle's pen color so that the flame is a different
     #        color to the rest of the star. Run the program again. Check the
     #        second picture in the recipe.
-
+    hmmm.color('red')
     # LOOP   When you have one arm looking right, change your for loop to
     #        repeat 25 times.
     
