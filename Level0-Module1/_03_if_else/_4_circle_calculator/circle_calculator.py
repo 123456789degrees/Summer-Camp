@@ -3,5 +3,15 @@
 # If they choose area, display the area of the circle using the radius.
 # Otherwise, display the circumference of the circle using the radius.
 
+import math
+from tkinter import messagebox, simpledialog, Tk
+root = Tk()
+r = simpledialog.askinteger(title='Radius', prompt="Enter a radius: ")
+matthewpeed = simpledialog.askstring(title='Radius', prompt="Area or circumference ")
+if matthewpeed.lower() == "area":
+    messagebox.showinfo(title="Area", message=r * r * math.pi)
+else:
+    messagebox.showinfo(title="Circumference", message=2 * r * math.pi)
+
 #Area = πr^2
 #Circumference = 2πr 
