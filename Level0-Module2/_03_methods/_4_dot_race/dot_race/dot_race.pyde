@@ -11,7 +11,7 @@ can_play_sounds = False
 def setup():
     size(800, 200)
     global x
-
+    x = 50
     # 1. Set the variable named x to 50.
 
 def draw():
@@ -20,12 +20,13 @@ def draw():
     
     # 2. Draw an ellipse of height and width 50. Make sure to use the x variable
     # for its X position. Pick a y value that places it half way down the window.
-    
+    ellipse(x, y, 50, 50)
     # 3. Fill in the ellipse with a nice color. Remember to put it above the code
     # where you draw the ellipse.
-    
+    fill(255,0,0)
     # 4. If the mouse is pressed change the x value so that the dot moves to the right
-    
+    if mousePressed:
+        x += 5
     # 5. If your dot moves slowly, make it move faster. If it moves too quickly,
     # slow it down (you have to figure out what part of your code to change)
 

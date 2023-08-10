@@ -15,8 +15,22 @@ if __name__ == '__main__':
     window.bgcolor('white')
 
     # TODO 1) Create a new Turtle
+    t = turtle.Turtle()
+    t.circle(50)
+    t.pensize(10)
+    color = simpledialog.askstring(title="Color", prompt="Which pen color do you want?")
     #      2) Make the turtle draw a shape (this will take more than one line
     #         of code)
+    for i in range (10):
+        if color.lower() == "red":
+            t.pencolor(255, 0, 0)
+        elif color.lower() == "green":
+            t.pencolor(0, 255, 0)
+        elif color.lower() == "blue":
+            t.pencolor(0, 0, 255)
+        else:
+            t.pencolor(32, 255, 21)
+
     #      3) Set the pen width to 10
     #      4) Ask the user what color pen they would like to draw with
     #      5) Use an if/else statement to set the pen color that the user
