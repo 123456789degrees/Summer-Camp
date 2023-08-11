@@ -24,10 +24,8 @@ def animals():
             show_image("duck.jpg")
         elif animal.lower() == "dog":
             woof()
-            show_image("dog.jpg")
         elif animal.lower() == "cat":
             meow()
-            show_image("cat.jpg")
         elif animal.lower() == "llama":
             llama_scream()
             show_image("llama.jpg")
@@ -65,27 +63,22 @@ def show_image(filename=None):
 
 
 def moo():
-    show_image('cow.jpg')
     playsound('moo.wav')
 
 
 def quack():
-    show_image('duck.jpg')
     playsound('quack.wav')
 
 
 def woof():
-    show_image('dog.jpg')
     playsound('woof.wav')
 
 
 def meow():
-    show_image('cat.jpg')
     playsound('meow.wav')
 
 
 def llama_scream():
-    show_image('llama.jpg')
     playsound('llama.wav')
 
 
